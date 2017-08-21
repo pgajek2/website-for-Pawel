@@ -16,6 +16,22 @@ body{
     height: 100vh;
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  background: #212121;
+}
+
+.nav {
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
 #current-menu{
     display: block;
 }
@@ -28,6 +44,13 @@ body{
     font-size: 22px;
     display: none;
     text-align: left;
+    padding: 40px 1%; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
 }
 
 .bar{
@@ -48,6 +71,9 @@ body{
         color: $orange-color;
         font-size: 28px;
     }
+    li:first-child a{
+        color: $orange-color;
+    }
     li{
         min-width: 10%;
         float:left;
@@ -61,6 +87,7 @@ body{
         font-size: 26px;
     }
 }
+
 
 .bar:after{
     content: "";
@@ -258,7 +285,7 @@ h2{
     }
 }
 
-@media (min-width: 0px) and (max-width: 575px) { 
+@media (min-width: 240px) and (max-width: 575px) { 
 
      #current-menu{
         display: none;
@@ -266,7 +293,6 @@ h2{
     
     #menu{
         display: block;
-        padding: 25px 1%;
     }
     
     .bar{
@@ -351,7 +377,6 @@ h2{
     
     #menu{
         display: block;
-        padding: 25px 1%;
     }
     
     .bar{
@@ -422,7 +447,6 @@ h2{
     
     #menu{
         display: block;
-        padding: 25px 1%; 
     }
     
     .bar{
