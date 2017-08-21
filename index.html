@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Paweł Waśniowski</title>
+        <meta charset="utf-8"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="fontello-bef14407/css/fontello.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="vendors/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>   <script type="text/javascript" src="jquery.fullPage.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="top-content">
+                <div class="bar">
+                    <div id="menu" onclick="showMenu()">
+                        <i class="icon-menu"></i>
+                    </div>
+                    <ul id="current-menu">
+                            <li>PawełWaśniowski.pl</li>
+                            <li>Jak pomóc?</li>
+                            <li>O mnie</li>
+                            <li>Kontakt</li>
+                    </ul>
+                </div>  
+            </div>
+            
+            <div class="how-help">
+                <h2>W czym można pomóc?</h2>
+                <ul>
+                    <li>Zabraniu mnie do Kościoła na Msze Świętą.</li>
+                    <li>Zabraniu mnie na rehabilitację.</li>
+                    <li>Zabraniu mnie do lekarza, apteki, sklepu.</li>
+                    <li>Położeniu mnie do łóżka czy podniesienie mnie z niego (gdy mojej mamy nie ma w domu).</li>
+                    <li>Pomocy przy kąpieli.</li>
+                    <li>Zabraniu mnie na spacer, na wycieczkę.</li>
+                    <li>Zrobieniu mi zakupów, zrealizowaniu recepty czy załatwieniu różnego rodzaju spraw urzędowych.</li>
+                </ul>
+                <h2>Kliknij tutaj!</h2>
+                <button>
+                    <a href="https://docs.google.com/spreadsheets/d/1yJPW6SlH4pliWL9ZQ_q8tEubxF_gqnoBvZY1SDMdckc/edit?pref=2&pli=1#gid=295068089">
+                            Grafik pomocy dla Pawła
+                    </a>
+               </button>
+            </div>
+            
+            <div class="photo">
+            </div>
+            
+            <div class="about">
+                <h2>O mnie</h2>
+                <div class="about-text">
+                    <h1>PawełWaśniowski.pl</h1>
+                    <p>Mam na imię Paweł i od dziecka poruszam się na elektrycznym wózku inwalidzkim. Moje życie jest w 100% zależne od innych. Przez 20 lat prawie nie wychodziłem z domu. Opiekuje się mną tylko mama, która musi równocześnie opiekować się moją chorą siostrą.</p>
+
+                    <p>Gdy byłem jeszcze niemowlakiem miałem wypadek: spadający z dachu śnieg, zmiażdżył mój wózek i to cud, że dziś mogę coś do Ciebie napisać. Jednak Pan Bóg o mnie nie zapomniał i dał mi drugą szansę.</p>
+
+                    <p>Po 20 latach moje życie zaczęło się zmieniać. Codziennie dziękuje Bogu za to, że dał mi przyjaciół, którzy mi pomagają. Dzisiaj mam już 30 lat i od ponad roku chodzę na rehabilitację, która zmniejsza moją spastykę mięśni, aby jeśli kiedyś Bóg pozwoli, wyjść na normalny, zwyczajny spacer do parku, który jest tak blisko, a jednak tak daleko…</p>
+                </div>
+                <div class="about-img">
+                    <img src="img/pawel.jpg">
+                </div>
+            </div>
+            
+            <div class="contact">
+                <h2>Kontakt</h2>
+                <form name="contact-form" method="post">
+                    <input placeholder="Imię..." type="text" name="name">
+                    <input placeholder="Nazwisko..." type="text" name="lastname">
+                    <input placeholder="Email..." type="email" name="email">
+                    <textarea placeholder="Wiadomość..." name="message"></textarea>
+                    <button type="submit">Wyślij</button>
+                    <!--<?php
+                        if(isset($_POST['email'])) {
+                            if( !isset($_POST['name']) ||
+                                !isset($_POST['lastname']) ||
+                                !isset($_POST['message']) ||
+                                ($_POST['name'] == "")){
+                                echo "<h4>Uzupełnij dane!</h4>";  
+                            } else {
+                                $to = "pgajek2@gmail.com";
+                                $subject = "Wiadomość ze strony pawelwasniowski.pl";
+                                $name = $_POST['name'];
+                                $last_name = $_POST['lastname'];
+                                $message = $_POST['message'];
+                                $from = $_POST['email'];
+                                $email_message = "Imię: ".$name."\n Nazwisko: ".$last_name."\n Wiadomość: ".$message."\n Email: ".$from."\n";
+                                @mail($to, $subject, $email_message, $from);
+                                echo "<h4>Wiadomość została wysłana!</h4>";
+                            }
+                        }
+                    ?>-->
+                </form>
+                <div class="contact-data">
+                    <h3>Paweł Waśniowski</h3>
+                    <p><i class="icon-home"></i>Adres: ul. Krowoderskich Zuchów 18/2 Kraków</p>
+                    <p><i class="icon-phone-squared"></i>Tel.domowy: 12 634 25 58</p>
+                    <p><i class="icon-phone-squared"></i>Tel.komórkowy: 502 369 953</p>
+                    <p><i class="icon-mail-squared"></i>Email: pwasniowski@poczta.onet.pl</p>
+                    <p><i class="icon-skype"></i>Skype: pwasniowski</p>
+                    <p>
+                        <a href="https://www.facebook.com">
+                            <i class="icon-facebook-official"></i>
+                             Facebook 
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>"Człowiek jest wielki nie przez to, co posiada, lecz przez to, kim jest; nie przez to, co ma, lecz przez to, czym dzieli się z innymi."
+                        ~ Jan Paweł II
+                </p>
+                2017 &copy;
+            </div>
+            
+        </div> 
+    </body>
+</html>

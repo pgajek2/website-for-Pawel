@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Caveat:400,700|Pacifico|Podkova:400,500,600,700&subset=latin-ext");
+body {
+  background-color: dimgray;
+  margin: 0;
+  font-family: 'Podkova', serif; }
+
+.top-content {
+  background-image: url(../img/background-help.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 100vh; }
+
+#current-menu {
+  display: block; }
+
+#menu {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-size: 22px;
+  display: none;
+  text-align: left; }
+
+.bar {
+  color: white;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .bar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: rgba(22, 22, 22, 0.5);
+    list-style-type: none; }
+  .bar li:first-child {
+    min-width: 21%;
+    margin: 0px 45% 0px 3%;
+    font-family: "Pacifico", cursive;
+    color: #ff9800;
+    font-size: 28px; }
+  .bar li {
+    min-width: 10%;
+    float: left;
+    line-height: 100px;
+    height: 100px;
+    font-size: 22px; }
+  .bar li:hover {
+    color: #ff9800;
+    cursor: pointer;
+    font-size: 26px; }
+
+.bar:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.shadow, .how-help li, .about img {
+  -webkit-box-shadow: 15px 15px 36px 0px black;
+  -moz-box-shadow: 15px 15px 36px 0px black;
+  box-shadow: 15px 15px 36px 0px black; }
+
+h2 {
+  margin: 0;
+  padding: 25px 0px 15px 0px;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+  font-size: 42px; }
+
+.how-help {
+  text-align: center;
+  background-image: url(../img/organic-tiles.png);
+  padding-bottom: 20px; }
+  .how-help ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px; }
+  .how-help li {
+    width: 23%;
+    padding: 25px 1%;
+    margin: auto;
+    background-color: #212121;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+    color: #ff9800; }
+    .how-help li:nth-child(odd) {
+      margin: 10px 55% 10px 20%; }
+    .how-help li:nth-child(even) {
+      margin: 10px 20% 10px 55%; }
+  .how-help li:last-child {
+    margin-bottom: 10px; }
+  .how-help a {
+    text-decoration: none;
+    color: #ff9800;
+    display: block;
+    line-height: 55px; }
+  .how-help button {
+    margin: 0px auto 10px auto;
+    height: 60px;
+    font-size: 22px;
+    min-width: 20%;
+    background-color: #212121;
+    outline: none;
+    border: 1px solid #ff9800;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
+  .how-help button:hover {
+    background: #303030;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.photo {
+  height: 50vh;
+  background-image: url(../img/volunteer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.9; }
+
+.about {
+  background-image: url(../img/organic-tiles.png);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1%; }
+  .about .about-text {
+    width: 42%;
+    padding: 1% 2%;
+    margin: auto;
+    font-size: 20px; }
+  .about h1 {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    font-size: 28px; }
+  .about h2 {
+    width: 90%;
+    text-align: center; }
+  .about p {
+    margin-top: 0px; }
+  .about .about-img {
+    width: 35%;
+    padding: 1% 3%;
+    margin: 0 auto; }
+  .about img {
+    width: 100%;
+    border: 2px solid #ff9800;
+    border-radius: 20px; }
+
+.contact {
+  background-image: url(../img/organic-tiles.png);
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 20px; }
+  .contact p {
+    margin-top: 0px; }
+  .contact p:last-child {
+    margin-bottom: 0; }
+  .contact h2 {
+    width: 100%;
+    text-align: center; }
+  .contact h3 {
+    margin: 0px auto 10px auto; }
+  .contact form {
+    width: 50%; }
+  .contact input[type=text],
+  .contact input[type=email] {
+    width: 69%;
+    height: 25px;
+    margin: 5px;
+    padding-left: 1%; }
+  .contact textarea {
+    width: 69%;
+    height: 80px;
+    padding-top: 8px;
+    padding-left: 1%; }
+  .contact button {
+    display: block;
+    margin: 10px auto;
+    height: 35px;
+    width: 25%;
+    font-size: 18px;
+    outline: none;
+    background-color: #212121;
+    color: #ff9800;
+    -webkit-transition: all  0.3s ease-in;
+    -o-transition: all  0.3s ease-in;
+    transition: all  0.3s ease-in;
+    border: 1px solid #ff9800; }
+  .contact button:hover {
+    background: #303030;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  .contact .contact-data {
+    width: 40%;
+    padding-left: 10%;
+    text-align: left; }
+  .contact a {
+    text-decoration: none;
+    color: black; }
+
+.footer {
+  padding: 20px 2%;
+  background-color: #212121;
+  color: white;
+  text-align: center; }
+  .footer p {
+    margin: 0px; }
+
+@media (min-width: 0px) and (max-width: 575px) {
+  #current-menu {
+    display: none; }
+  #menu {
+    display: block;
+    padding: 25px 1%; }
+  .bar li {
+    min-width: 100%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    background-color: #212121;
+    border-bottom: 1px solid #ff9800; }
+  .bar li:first-child {
+    min-width: 10%;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #ff9800; }
+  .bar li:hover {
+    background: #303030; }
+  .how-help li {
+    width: 90%; }
+    .how-help li:nth-child(odd) {
+      margin: 10px 4% 10px 4%; }
+    .how-help li:nth-child(even) {
+      margin: 10px 4% 10px 4%; }
+  .how-help button {
+    width: 80%; }
+  .about .about-text {
+    width: 90%;
+    text-align: center; }
+  .about .about-img {
+    width: 80%; }
+  .contact form {
+    width: 100%; }
+  .contact .contact-data {
+    width: 100%;
+    padding-left: 0%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; }
+  .contact input[type=text],
+  .contact input[type=email] {
+    width: 80%; }
+  .contact textarea {
+    width: 80%; }
+  .contact button {
+    width: 40%; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #current-menu {
+    display: none; }
+  #menu {
+    display: block;
+    padding: 25px 1%; }
+  .bar li {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #212121;
+    border-bottom: 1px solid #ff9800; }
+  .bar li:first-child {
+    min-width: 100%;
+    margin: auto;
+    border-top: 1px solid #ff9800; }
+  .bar li:hover {
+    background: #303030; }
+  .how-help li {
+    width: 50%; }
+    .how-help li:nth-child(odd) {
+      margin: 10px 33% 10px 15%; }
+    .how-help li:nth-child(even) {
+      margin: 10px 15% 10px 33%; }
+  .how-help button {
+    width: 50%; }
+  .about .about-text {
+    width: 90%;
+    text-align: center; }
+  .about .about-img {
+    width: 80%; }
+  .contact form {
+    width: 100%; }
+  .contact .contact-data {
+    width: 90%;
+    padding-left: 0%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #current-menu {
+    display: none; }
+  #menu {
+    display: block;
+    padding: 25px 1%; }
+  .bar li {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #212121;
+    border-bottom: 1px solid #ff9800; }
+  .bar li:first-child {
+    min-width: 100%;
+    margin: auto;
+    border-top: 1px solid #ff9800; }
+  .bar li:hover {
+    background: #303030; }
+  .how-help li {
+    width: 30%; }
+    .how-help li:nth-child(odd) {
+      margin: 10px 53% 10px 15%; }
+    .how-help li:nth-child(even) {
+      margin: 10px 15% 10px 53%; }
+  .how-help button {
+    width: 40%; }
+  .about .about-text {
+    width: 90%; }
+  .about .about-img {
+    width: 80%; }
+  .contact form {
+    width: 100%; }
+  .contact .contact-data {
+    width: 90%;
+    padding-left: 0%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bar li:first-child {
+    min-width: 20%;
+    margin: 0px 15% 0px 4%; }
+  .bar li {
+    width: 20%; }
+  #current-menu {
+    display: block; }
+  .how-help li {
+    width: 27%; }
+    .how-help li:nth-child(odd) {
+      margin: 10px 53% 10px 18%; }
+    .how-help li:nth-child(even) {
+      margin: 10px 18% 10px 53%; }
+  .about .about-text {
+    width: 40%;
+    padding: 1% 2%; }
+  .about .about-img {
+    width: 50%;
+    padding: 1% 3%;
+    margin: 0 auto; }
+  .about img {
+    width: 100%;
+    border: 2px solid #ff9800;
+    border-radius: 20px; }
+  .contact form {
+    width: 60%; }
+  .contact .contact-data {
+    width: 40%;
+    padding-left: 0%; } }
+
+@media (min-width: 1200px) {
+  #current-menu {
+    display: block; } }
