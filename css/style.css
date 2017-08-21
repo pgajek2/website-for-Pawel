@@ -37,7 +37,7 @@ body {
   font-size: 22px;
   display: none;
   text-align: left;
-  padding: 40px 1%; }
+  padding: 30px 1%; }
 
 a {
   color: white;
@@ -117,6 +117,10 @@ h2 {
     color: #ff9800;
     display: block;
     line-height: 55px; }
+  .how-help h1 {
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 38px; }
   .how-help button {
     margin: 0px auto 10px auto;
     height: 60px;
@@ -252,11 +256,18 @@ h2 {
   .footer p {
     margin: 0px; }
 
-@media (min-width: 240px) and (max-width: 575px) {
+@media (min-width: 0px) and (max-width: 575px) {
   #current-menu {
     display: none; }
   #menu {
     display: block; }
+  .top-content {
+    background-image: url(../img/background-help.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    height: 50vh; }
   .bar li {
     min-width: 100%;
     margin: auto;
@@ -295,11 +306,13 @@ h2 {
     text-align: center; }
   .contact input[type=text],
   .contact input[type=email] {
-    width: 80%; }
+    width: 80%;
+    height: 50px; }
   .contact textarea {
     width: 80%; }
   .contact button {
-    width: 40%; } }
+    width: 60%;
+    height: 50px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   #current-menu {

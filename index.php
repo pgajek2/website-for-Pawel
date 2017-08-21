@@ -53,6 +53,7 @@
                         <li>Zrobieniu mi zakupów, zrealizowaniu recepty czy załatwieniu różnego rodzaju spraw urzędowych.</li>
                     </ul>
                     <h2>Kliknij tutaj!</h2>
+                    <h1><i class="icon-down-hand"></i></h1>
                     <button>
                         <a href="https://docs.google.com/spreadsheets/d/1yJPW6SlH4pliWL9ZQ_q8tEubxF_gqnoBvZY1SDMdckc/edit?pref=2&pli=1#gid=295068089">
                                 Grafik pomocy dla Pawła
@@ -84,19 +85,22 @@
             <section id="contact">
                 <div class="contact">
                     <h2>Kontakt</h2>
-                    <form name="contact-form" method="post">
+                    <form name="contact-form" method="POST">
                         <input placeholder="Imię..." type="text" name="name">
                         <input placeholder="Nazwisko..." type="text" name="lastname">
                         <input placeholder="Email..." type="email" name="email">
                         <textarea placeholder="Wiadomość..." name="message"></textarea>
                         <button type="submit">Wyślij</button>
-                        <!--<?php
+                        <?php
                             if(isset($_POST['email'])) {
                                 if( !isset($_POST['name']) ||
                                     !isset($_POST['lastname']) ||
                                     !isset($_POST['message']) ||
-                                    ($_POST['name'] == "")){
-                                    echo "<h4>Uzupełnij dane!</h4>";  
+                                    ($_POST['name'] == "") ||
+                                    ($_POST['email'] == "") ||
+                                    ($_POST['lastname'] == "") ||
+                                    ($_POST['message'] == "")){
+                                    echo "<h4 style='color: red;'>Uzupełnij dane!</h4>";  
                                 } else {
                                     $to = "pgajek2@gmail.com";
                                     $subject = "Wiadomość ze strony pawelwasniowski.pl";
@@ -106,10 +110,10 @@
                                     $from = $_POST['email'];
                                     $email_message = "Imię: ".$name."\n Nazwisko: ".$last_name."\n Wiadomość: ".$message."\n Email: ".$from."\n";
                                     @mail($to, $subject, $email_message, $from);
-                                    echo "<h4>Wiadomość została wysłana!</h4>";
+                                    echo "<h4 style='color: green;'>Wiadomość została wysłana!</h4>";
                                 }
                             }
-                        ?>-->
+                        ?>
                     </form>
                     <div class="contact-data">
                         <h3>Paweł Waśniowski</h3>
