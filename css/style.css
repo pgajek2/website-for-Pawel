@@ -256,7 +256,7 @@ h2 {
   .footer p {
     margin: 0px; }
 
-@media (min-width: 0px) and (max-width: 575px) {
+@media (min-width: 0px) and (max-width: 575px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 0px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 0px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 0px), only screen and (min-device-pixel-ratio: 2) and (min-width: 0px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 0px), only screen and (min-resolution: 192dpi) and (min-width: 0px), only screen and (min-resolution: 2dppx) and (min-width: 0px) {
   #current-menu {
     display: none; }
   #menu {
@@ -314,7 +314,7 @@ h2 {
     width: 60%;
     height: 50px; } }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 576px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 576px), only screen and (min-device-pixel-ratio: 2) and (min-width: 576px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 576px), only screen and (min-resolution: 192dpi) and (min-width: 576px), only screen and (min-resolution: 2dppx) and (min-width: 576px) {
   #current-menu {
     display: none; }
   #menu {
@@ -354,7 +354,7 @@ h2 {
     padding-bottom: 30px;
     text-align: center; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), only screen and (min-resolution: 192dpi) and (min-width: 768px), only screen and (min-resolution: 2dppx) and (min-width: 768px) {
   #current-menu {
     display: none; }
   #menu {
@@ -393,7 +393,7 @@ h2 {
     padding-bottom: 30px;
     text-align: center; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 992px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 992px), only screen and (min-device-pixel-ratio: 2) and (min-width: 992px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 992px), only screen and (min-resolution: 192dpi) and (min-width: 992px), only screen and (min-resolution: 2dppx) and (min-width: 992px) {
   .bar li:first-child {
     min-width: 20%;
     margin: 0px 15% 0px 4%; }
@@ -424,6 +424,6 @@ h2 {
     width: 40%;
     padding-left: 0%; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1200px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1200px), only screen and (min-resolution: 192dpi) and (min-width: 1200px), only screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   #current-menu {
     display: block; } }
