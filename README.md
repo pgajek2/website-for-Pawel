@@ -2,4 +2,4 @@
 
 Link:
 
-https://pgajek2.github.io/websiteforPawel/
+https://pgajek2.github.io/website-for-Pawel/
